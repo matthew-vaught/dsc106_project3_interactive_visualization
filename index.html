@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMIP6 Temperature Anomaly Map</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson@3"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌡️ CMIP6 Global Temperature Anomaly Map (2080–2100)</h1>
+    <p>Select an emissions scenario to visualize projected temperature increase:</p>
+    <select id="scenario-select">
+      <option value="ssp126">SSP126 (Low)</option>
+      <option value="ssp245">SSP245 (Medium)</option>
+      <option value="ssp585" selected>SSP585 (High)</option>
+    </select>
+
+    <div id="map"></div>
+    <div id="legend"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
